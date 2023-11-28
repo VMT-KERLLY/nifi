@@ -1,0 +1,88 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ ],
+        "controllerServices" : [ ],
+        "defaultBackPressureDataSizeThreshold" : "1 GB",
+        "defaultBackPressureObjectThreshold" : 10000,
+        "defaultFlowFileExpiration" : "0 sec",
+        "flowFileConcurrency" : "UNBOUNDED",
+        "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+        "funnels" : [ ],
+        "identifier" : "7adb5863-5ac3-3083-b6ba-d56179a900d6",
+        "inputPorts" : [ ],
+        "instanceIdentifier" : "16b67385-018c-1000-2cfb-ab2caaab311b",
+        "labels" : [ ],
+        "name" : "test2",
+        "outputPorts" : [ ],
+        "position" : {
+          "x" : 744.0,
+          "y" : 72.0
+        },
+        "processGroups" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.20.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "7adb5863-5ac3-3083-b6ba-d56179a900d6",
+          "identifier" : "50c76c5d-50e1-3483-869f-494b9af102e2",
+          "instanceIdentifier" : "16b68465-018c-1000-f19e-006b0da33958",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "CalculateRecordStats",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 582.0,
+            "y" : 156.0
+          },
+          "properties" : {
+            "record-stats-limit" : "10"
+          },
+          "propertyDescriptors" : {
+            "record-stats-limit" : {
+              "displayName" : "record-stats-limit",
+              "identifiesControllerService" : false,
+              "name" : "record-stats-limit",
+              "sensitive" : false
+            },
+            "record-stats-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-stats-reader",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.CalculateRecordStats",
+          "yieldDuration" : "1 sec"
+        } ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { },
+      "parameterProviders" : { }
+    }
+  }
+}
